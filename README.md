@@ -1,60 +1,60 @@
-# Phase 1 Project Template - Minimum Viable Product (MVP)
+# Microsoft Movie Analysis
+**Authors:** Elliott Iturbe, Colette Crowder, Will Toranto
 
-![blueprint](images/blueprint.png)
+## Overview
+This project aims to discover how to make the most profitable movie possible in order to make business recommendations to Microsoft. Descriptive analyses of a variety of data on previously released movies reveal that the most profitable movie Microsoft could make is an adventure movie with an NR rating, directed by Jean Negulsesco, with a runtime between 100 minutes and 131 minutes, at Buena Vistas studios.
 
-This repository is like a blueprint, providing structure for your first End of Phase Project. We suggest you base your Phase 1 project off of this repository so you can focus less on formatting and organization, and more on the _analysis and communication skills_ that will support your progress through the course. This template is designed to make your project portfolio-ready in order to impress the future employers who will review it. 
+## Business Problem
+Microsoft wants to open a movie studio that can compete with other successful movie studios. However, they lack knowledge about filmmaking. To help them in this area, we will find out how a variety of factors affect the popularity of movies and offer recommendations.
 
-## Repository Contents
+## Data
+We examined data on gross, genre, studio, director, release date, MPR rating, Rotten Tomatoes score, and run time. Variables like gross and Rotten Tomatoes score served as measures of the success of movies. The relationship between the rest of the variables and those two measures of success demonstrate what factors can be relied upon to make a profitable movie.
 
-Below is a list of the contents of this repository - instructions for using them are in the next section.
+## Methods
+Our process started with organizing our data by dropping irrelevant columns, creating new ones, sorting by specific values, and merging dataframes. While modeling our data, we used descriptive statistics to create helpful visuals that displayed our findings. Overall, our descriptive analysis is absolutely essential for anyone looking to succeed in the movie industry.
 
-- `README.md`: The README for this repo explaining its contents - you're reading it now.
-- `TEMPLATE_README.md`: An example of a project README that provides a brief overview of your whole project.
-- `dsc-phase1-project-template.ipynb`: A starter Jupyter Notebook with headings, code examples and guiding questions.
-- `create_sql_database.ipynb`: A notebook for creating a SQL database if you would prefer to use SQL for this project.
-- `DS_Project_Presentation_Template.pdf`: A starter slide deck presenting your project - here is an [editable version](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy).
-- `data` folder: A folder for the data you reference with your code.
-- `src` folder: A folder containing custom functions.
-- `images` folder: A folder for the images you reference in your files .
-- `.gitignore`: A hidden file that tells git to not track certain files and folders.
+## Results
 
-## Instructions For Using This Repository
+This shows what genre of movie Microsoft should make based on which genre has the highest worldwide gross.
 
-### Create a new Github repository. 
-If you are working in a group, only one member of your team should complete these steps.
+![graph1](./images/grouped_barplot_Seaborn_barplot_Python_corrected.png)
 
-1. Click [this link](https://github.com/new) and set up a new Github  Repository.
-   - Give your repository a name that is descriptive of the project. (You can change this later if you think of a better name)
-   - Set the repository to public
-   - Skip the `Initialize this repository with` section.
-   - Click `Create Repository`
-   - Set your group members as collaboators.
+This gives us a visual of the Rotten Tomatos Generated rating for the MPA rating for the Adventure movies from the dataframe.
 
-2. Clone the repository you created in step 1
-   - Click the green code button
-   - Copy the provided https link. (It should end with `.git`)
-   - Open a terminal window
-   - cd into your phase 1 folder
-   - Clone the github repository
-   
-3. Pull down the project files
-   - cd into the newly created project folder from step 2
-   - run `git remote add upstream https://github.com/learn-co-students/bsc-phase-1.git`
-   - run `git pull upstream main`   
+![graph1](./images/Rotten_tomatose_Ratings.png)
 
-4. Push the project files to your personal github repository
+This graph shows the most profitable directors for adventure movies, and we conclude that Jean Negulesco is by far the best choice.
 
-If you are working in a group, and did not complete the above steps, you should clone the repository made by your team member.
+![graph1](./images/Directors_and_Profit_for_Adventure_Movies.png)
 
-### Use The Slide Template
+Buena Vistas Studios ("BV") is responsible 65% of the top 20 grossing movies. If Microsoft is interested in using another studio to make their film, Buena Vistas would be a great choice.
 
-1. Go to [this link](https://docs.google.com/presentation/d/1PaiH1bleXnhiPjTPsAXQSiAK0nkaRlseQIr_Yb-0mz0/copy) to make an editable copy of the slide deck in your own Google Drive account
-2. Go to "Slide," select "Change Theme," and pick a theme you like so your presentation doesn't look like everyone else's
+![graph1](./images/top20_barplot_Seaborn_barplot_Python.png)
+
+This is a comparison of runtime to revenue that tells Microsoft that there is no true monetary value for creating a movie outside of the shaded area.
+
+![graph1](./images/Runtime_Comparison_line_added.png)
+
+This graph shows the average rating for movies for each month that they are released and since there is no significant diffference between each one, we conclude that release month doesn't really matter.
+
+![graph1](./images/Month_and_Rating.png)
 
 
+## For More Information
 
-### Notes
+Please review our full analysis in [our Jupyter Notebook](./Final Notebook.ipynb) or our [presentation](./microsoft_movie_analysis.pdf).
 
-- The visualizations in the notebook use best practices for visualization that you should try to emulate. For example, they have clear axes, descriptive titles, and appropriate number formatting.
-- The `dsc-phase1-project-template.ipynb` is intended to be the _final version_ of your project. The first notebook you create will not look like this. You are encouraged to start with a very disorderly notebook and clean it as you go.
-- If you would like to use SQL for this project, please open the `create_sql_database.ipynb` notebook, and run the cells. The schema for the database is stored in the images/ folder.
+For any additional questions, please contact **Elliott Iturbe at eaiturbe@bsc.edu, Will Toranto at williamtoranto@gmail.com, or Colette Crowder at crcrowde@bsc.edu**
+
+## Repository Structure
+
+Describe the structure of your repository and its contents, for example:
+
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
+
