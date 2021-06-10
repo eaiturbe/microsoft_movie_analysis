@@ -1,14 +1,15 @@
 # Title
 
-**Authors**: Student1, Student2
+**Authors**: Elliott Iturbe, Colette Crowder, Will Toranto
 
 ## Overview
 
 A one-paragraph overview of the project, including the business problem, data, methods, results and recommendations.
 
-## Business Problem
 
-Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
+## Business Problem
+Microsoft’s competition is creating videos. They want to get in on the action and create a movie studio of their own. However, they don’t know a lot about movie-making. That’s where we come in. Our job is to use data to figure out what makes a movie successful. From there, we will perform analyses and be able to recommend various courses of action to Microsoft based off of evidence of what works. 
+ the data questions that you plan to answer in order to solve them.
 
 ***
 Questions to consider:
