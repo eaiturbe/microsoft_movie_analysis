@@ -52,13 +52,11 @@ For any additional questions, please contact **Elliott Iturbe at eaiturbe@bsc.ed
 
 ## Repository Structure
 
-Describe the structure of your repository and its contents, for example:
-
 ```
-├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
-├── DS_Project_Presentation.pdf         <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── data                                  <- data files used for analyses
+├── images                                <- visualizations created
+├── Final Notebook.ipynb                  <- code written for project with explanation
+├── microsoftmovieanalysispowerpoint.pdf  <- PDF version of powerpoint
+└── README.md                             <- overview of project
 ```
 
