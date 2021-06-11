@@ -4,8 +4,6 @@
 ## Overview
 The goal of this project is to discover how to make the most profitable movie possible in order to make business recommendations to Microsoft. Descriptive analyses of a variety of data on previously released movies reveal that the most profitable movie Microsoft could make is an adventure movie with an NR rating, directed by Jean Negulsesco at Buena Vistas studios, with a runtime between 100 minutes and 131 minutes.
 
-![microsoft](./images/This PC/Downloads.jpg)
-
 ## Business Problem
 Microsoft wants to open a movie studio that can compete with other successful movie studios. However, they lack knowledge about filmmaking. To help them in this area, we will find out how a variety of factors affect the popularity of movies and then offer recommendations.
 
